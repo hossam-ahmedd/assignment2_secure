@@ -10,5 +10,5 @@ function base64url(input) {
 const header = { alg: 'none', typ: 'JWT' };
 const payload = { sub: 'admin', role: 'admin', iss: 'jwt-lab' };
 
-const token = `${base64url(header)}.${base64url(payload)}.`; // trailing dot for empty signature
+const token = `${base64url(header)}.${base64url(payload)}.`; 
 console.log(token);
