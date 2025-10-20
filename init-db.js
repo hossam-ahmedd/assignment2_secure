@@ -1,4 +1,4 @@
-// init-db.js
+
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcryptjs');
 const dbFile = './users.db';
@@ -37,3 +37,4 @@ db.serialize(async () => {
 });
 
 db.close();
+
